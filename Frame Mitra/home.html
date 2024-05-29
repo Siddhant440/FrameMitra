@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame Mitra</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('img/bgg.jpg');
+            background-size: cover;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: black;
+        }
+
+        #logo img {
+            height: 50px;
+        }
+
+        #navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        #navbar ul li {
+            margin-right: 20px;
+        }
+
+        #navbar a,
+        .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-right: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #ea0000;
+        }
+
+        #home {
+            text-align: center;
+            padding: 100px;
+            border: 2px solid #333;
+            margin: 30px;
+        }
+
+        #home h4 {
+            color: #333;
+            font-size: 40px;
+        }
+
+        #home p {
+            color: white;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .container {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        #bookNowButton,
+        #feedBackButton {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #bookNowButton:hover,
+        #feedBackButton:hover {
+            background-color: #ea0000;
+        }
+
+        #services {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px;
+        }
+
+        .box {
+            border: 2px solid #333;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .box img {
+            height: 400px;
+            width: 450px;
+            display: block;
+            margin: auto;
+        }
+
+        #about-us {
+            text-align: center;
+            margin: 30px;
+        }
+
+        #about-us h4 {
+            color: #333;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        #about-us p {
+            color: white;
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: rgba(247, 108, 83, 0.689);
+            color: black;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+}
+    </style>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logo.jpg" alt="Frame Mitra logo">
+        </div>
+        <ul>
+            <li><button id="bookNowButton">Book Now</button></li>
+            <li><button id="feedBackButton">Feedback</button></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h4>Welcome to Frame Mitra</h4>
+        <p>Your Story, Our Lens.</p>
+        <p>Book Your Photographer Now !</p><br>
+        <button id="bookNowBtn" class="btn">Book Now</button>
+    </section>
+
+    <section id="services">
+        <div class="box">
+            <img src="img/web1.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="img/web2.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="img/web3.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="about-us">
+        <h4>About Us</h4>
+        <p>Frame Mitra is designed to revolutionize the process of booking professional photographers for various occasions.
+            <br>A seamless platform that connects users with a curated network of skilled and experienced photographers,
+            <br>ensuring every special moment is captured with precision and artistry.</p>
+    </section>
+
+    <footer>
+        FRAME MITRA
+    </footer>
+
+    <script>
+        document.getElementById("bookNowBtn").addEventListener("click", function() {
+            window.location.href = "book.html";
+        });
+        document.getElementById("bookNowButton").addEventListener("click", function() {
+            window.location.href = "Book.html";
+        });
+        document.getElementById("feedBackButton").addEventListener("click", function() {
+            window.location.href = "feedback.html";
+        });
+    </script>
+</body>
+
+</html>
